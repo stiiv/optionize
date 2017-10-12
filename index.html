@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Optionize</title>
+</head>
+<body>
+	<title>Optionize</title>
+	<form>
+		Names: <select id="names" name="names"></select>
+	</form>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/stiivOptionize.js"></script>
+<script type="text/javascript">
+	var $names = $("#names");
+
+	stiivOptionize.setSelect($names)
+    			  .add(1, "Mirko")
+    			  .add(2, "Pero")
+    			  .addBlank()
+    			  .add(2, "Marko")
+    			  .add(3, "Gjuro")
+    			  .add(4, "Marko")
+    			  .remove(1)
+    			  .render()
+    			  .select(2);
+</script>
+</body>
+</html>
