@@ -1,6 +1,9 @@
 # optionize
 Easy and clearly add, remove or select option tags from jQuery('select') object
 
+## Usage
+
+```
 var $select = $("select");
 	stiivOptionize.setSelect($select)
     			  .add(1, "Mirko")
@@ -12,3 +15,4 @@ var $select = $("select");
     			  .remove(1)
     			  .render()
     			  .select(2);
+```
