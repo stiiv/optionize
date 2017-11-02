@@ -18,7 +18,7 @@
 <script type="text/javascript">
 	var $names = $("#names");
 
-	stiivOptionize.setSelect($names)
+	var s = stiivOptionize.setSelect($names)
     			  .add(1, "Mirko")
     			  .add(2, "Pero")
     			  .addBlank()
@@ -28,6 +28,8 @@
     			  .remove(1)
     			  .render()
     			  .select(2);
+
+  s.change(3, 'John Doe').render().select(2);
 </script>
 </body>
 </html>
