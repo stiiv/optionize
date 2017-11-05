@@ -29,6 +29,19 @@ var stiivOptionize = (function($, window, undefined) {
             return this;
         },
 
+        change: function(value, label) {
+            var options = this.options;
+
+            for (var index in options) {
+                if (options[index].val == value) {
+                    options[index].text = label;
+                    break;
+                }
+            }
+
+            return this;
+        },
+
         addBlank: function(value, label) {
             value = value || '';
             label = label || '';
